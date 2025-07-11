@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Admin Panel</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">View Blog</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="admin-actions">
+            <h2>Create New Post</h2>
+            <form id="createPostForm">
+                <div class="form-group">
+                    <label for="postTitle">Title</label>
+                    <input type="text" id="postTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="postContent">Content</label>
+                    <textarea id="postContent" rows="10" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="postAuthor">Author</label>
+                    <input type="text" id="postAuthor" required>
+                </div>
+                <button type="submit" class="btn">Create Post</button>
+            </form>
+        </section>
+
+        <section class="existing-posts">
+            <h2>Existing Posts</h2>
+            <div class="posts-list" id="adminPostsList">
+                <!-- Posts will be loaded here with edit/delete options -->
+                <div class="loading">Loading posts...</div>
+            </div>
+        </section>
+
+        <!-- Edit Post Modal -->
+        <div class="modal" id="editModal">
+            <div class="modal-content">
+                <span class="close-btn" id="closeEditModal">&times;</span>
+                <h2>Edit Post</h2>
+                <form id="editPostForm">
+                    <input type="hidden" id="editPostId">
+                    <div class="form-group">
+                        <label for="editPostTitle">Title</label>
+                        <input type="text" id="editPostTitle" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editPostContent">Content</label>
+                        <textarea id="editPostContent" rows="10" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="editPostAuthor">Author</label>
+                        <input type="text" id="editPostAuthor" required>
+                    </div>
+                    <button type="submit" class="btn">Update Post</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 My Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/db.js"></script>
+    <script src="scripts/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+[
+    {
+      "_id": "5f8d0d55b54764421b7156c1",
+      "title": "Getting Started with MongoDB Atlas",
+      "content": "MongoDB Atlas is a fully-managed cloud database service that provides all the features of MongoDB without the operational heavy lifting. In this post, we'll walk through setting up your first cluster, connecting to it, and performing basic CRUD operations. You'll learn how to secure your database, monitor performance, and scale as needed.",
+      "author": "Jane Doe",
+      "createdAt": "2023-05-15T09:30:00Z",
+      "updatedAt": "2023-05-15T09:30:00Z"
+    },
+    {
+      "_id": "5f8d0d55b54764421b7156c2",
+      "title": "Building a REST API with Node.js and Express",
+      "content": "Creating a RESTful API is a fundamental skill for modern web development. This tutorial covers setting up a Node.js server with Express, defining routes, handling requests and responses, and connecting to a database. We'll also cover middleware, error handling, and best practices for API design. By the end, you'll have a fully functional API ready for your frontend applications.",
+      "author": "John Smith",
+      "createdAt": "2023-06-02T14:15:00Z",
+      "updatedAt": "2023-06-05T11:20:00Z"
+    },
+    {
+      "_id": "5f8d0d55b54764421b7156c3",
+      "title": "Responsive Web Design Principles",
+      "content": "In today's multi-device world, responsive design is no longer optional. This post explores the core principles of responsive web design, including fluid grids, flexible images, and media queries. We'll look at mobile-first approaches, performance considerations, and tools to test your responsive designs. Practical examples will show how to implement these techniques in your projects.",
+      "author": "Alex Johnson",
+      "createdAt": "2023-06-20T16:45:00Z",
+      "updatedAt": "2023-06-20T16:45:00Z"
+    },
+    {
+      "_id": "5f8d0d55b54764421b7156c4",
+      "title": "Introduction to JavaScript ES6+ Features",
+      "content": "Modern JavaScript (ES6 and beyond) introduced many powerful features that make development more efficient and code more readable. This article covers arrow functions, template literals, destructuring, spread/rest operators, promises, async/await, and modules. Each feature includes examples comparing old and new syntax to help you understand the improvements and when to use them.",
+      "author": "Sarah Williams",
+      "createdAt": "2023-07-10T10:00:00Z",
+      "updatedAt": "2023-07-12T08:30:00Z"
+    },
+    {
+      "_id": "5f8d0d55b54764421b7156c5",
+      "title": "Best Practices for Full-Stack Development",
+      "content": "Full-stack development requires balancing frontend and backend concerns while maintaining code quality and performance. This post shares best practices for project structure, API design, state management, authentication, testing, and deployment. Whether you're working solo or on a team, these guidelines will help you build more maintainable and scalable applications.",
+      "author": "Michael Brown",
+      "createdAt": "2023-07-25T13:20:00Z",
+      "updatedAt": "2023-07-25T13:20:00Z"
+    }
+  ]
