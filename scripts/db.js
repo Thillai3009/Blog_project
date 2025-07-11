@@ -5,15 +5,12 @@ let db;
 
 async function connectToDatabase() {
     if (db) return db;
-    
-    client = new MongoClient(MONGODB_URI, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-    });
-    
+
+    client = new MongoClient(MONGODB_URI); // no options needed in v4+
+
     try {
         await client.connect();
-        db = client.db();
+        db = client.db(); // optionally: client.db('your-db-name')
         console.log("Connected to MongoDB Atlas");
         return db;
     } catch (err) {
@@ -21,6 +18,7 @@ async function connectToDatabase() {
         throw err;
     }
 }
+
 
 // CRUD Operations
 
